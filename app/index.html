@@ -1,15 +1,357 @@
-<head>
-<!--build:js js/main.min.js -->
-<script src="js/angular.js"></script>
-<script src="js/main.js"></script>
-<!-- endbuild -->
 
-<!--build:css css/styles.min.css-->
-<link rel="stylesheet" type="text/css" href="css/styles.css">
-<!--endbuild-->
+<!-- index.html -->
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+      <!--build:js js/main.min.js -->
+		<script src="js/angular.js"></script>
+		<script src="js/main.js"></script>
+	  <!-- endbuild -->
+
+	  <!--build:css css/styles.min.css-->
+	  <link rel="stylesheet" type="text/css" href="css/styles.css">
+	  <!--endbuild-->	
+   
+      <!-- load bootstrap and fontawesome via CDN -->
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    </head>
 
 
-</head>
-<h1>Hello world, this is working.</h1>
+    <body>
 
-<p>We are now in business.</p>
+    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+     <div class="main">   
+		<img src="images/truckimg.png" class="img-responsive"/>
+		<div class="container">
+		<p  class="center1">Wells Fargo knows and appreciates how hard you work.</p>
+		<h2 class="center">We're working together with you to:</h2>
+
+		<br/><br/>
+
+		<div class="row">
+		<div class="col-sm-4">
+			<img src="images/lockimg.png" class="img-responsive" id="lock"/>
+			<h4 class="center">Secure your future</h4>
+			<p class="center">A proactive approach to help protect and manage your money</p>
+		</div>
+
+		<div class="col-sm-4">
+			<img src="images/handsimg.png" class="img-responsive" id="hands"/>
+			<h4 class="center">Better our community</h4>
+			<p class="center">Let's work together to make an impact in our communities</p>
+		</div>
+
+		<div class="col-sm-4">
+			<img src="images/piggieimg.png" class="img-responsive" id="piggie"/>
+			<h4 class="center">Pursue your financial goals</h4>
+			<p class="center">See the financial goals we can accomplish together</p>
+		</div>
+		</div>
+
+		<br/><br/><br/><br/>
+
+		<div class="row">
+			<img src="images/greylock.png" class="img-responsive" id="greylock"/>
+			<h2 class="center1">Working together,<br/> we'll help secure your future.</h2>
+			<br/>
+			<p class="center2">
+			For over 160 years, Wells Fargo has been committed to your security. From 24/7 Fraud Monitoring to Account Alerts to exploring the latest in Biometric login, we proactively advance our security to protect what's yours.
+			</p>
+		</div>
+
+		<br/><br/><br/>
+
+		<div class="row">
+		<div class="col-sm-3">
+		<img src="images/redlockbackground.png" class="img-responsive" id="redlockbackground"/>
+		</div>
+		<div class="col-sm-8">
+		<div class="borderlines">
+		<h4 class="safety">Safety----front and center</h4>
+		<p class="safety">You've worked hard for what you've earned, which is why we take your trust seriously.<br/> When you see our new Security Trust Mark, know that your finances are protected.</p>
+		</div>
+		</div>
+		</div>
+
+		<br/><br/><br/>
+
+		<div class="row">
+		<div class="col-sm-4">
+		<img src="images/leftline.png" class="img-responsive" id="leftline"/>
+		</div>
+		<div class="col-sm-4">
+		<p class="comingsoon">Coming soon to WellsFargo: Biometric Login</p>
+		</div>
+		<div class="col-sm-4">
+		<img src="images/rightline.png" class="img-responsive" id="rightline"/>
+		</div>
+		</div>
+
+		<br/><br/><br/>
+
+		<div class="row">
+		<div class="col-sm-3">
+		<img src="images/retinaimg.png" class="img-responsive" id="retinaimg" style="float:left"/>
+		<p class="biometric">	&nbsp; Retina Scan</p>
+		<p class="biometricp">No pair of eyes is the same. Soon yours will be used to access your finances.</p>
+		</div>
+
+		<div class="col-sm-3">
+		<img src="images/facialimg.png" class="img-responsive" id="facialimg" style="float:left"/>
+		<p class="biometric"> &nbsp; Facial-recognition</p>
+		<p class="biometricp">In time, you'll use the unique shape of your face to unlock your account.</p>
+		</div>
+
+		<div class="col-sm-3">
+		<img src="images/fingerprintimg.png" class="img-responsive" id="fingerprintimg" style="float:left"/>
+		<p class="biometric"> &nbsp; Fingerprint authentication</p>
+		<p class="biometricp">Your distinctive mark is well on its way to replacing passwords.</p>
+		</div>
+
+		<div class="col-sm-3">
+		<img src="images/voiceimg.png" class="img-responsive" id="voiceimg" style="float:left"/>
+		<p class="biometric">&nbsp; Voice Recognition</p>
+		<p class="biometricp">The sound of your voice will make it easier to access your money on the go.</p>
+		</div>
+		</div>
+
+		<br/><br/><br/><br/>
+
+		<div class="row">
+		<img src="images/greyhands.png" class="img-responsive" id="greylock"/>
+		<h2 class="center1">Working together,<br/> we'll empower change.</h2>
+		<p class="center3">
+			Little by little, we can all do a lot. Learn how we're committed to<br/> helping <strong>17,100+</strong> organizations make huge impacts in our local communities.
+			</p>
+		</div>
+
+		<br/><br/><br/>
+
+		<div class="row">
+		<div class="col-sm-4">
+		<img src="images/img1.png" class="img-responsive"/>
+		<h5 class="archerbold"><strong>A recipe for success for food<br/>entreprenuers in the Mission District</strong></h5>
+		<p class="center5">La Cocina in San Francisco is more than just a kitchen-it's a business incubator that we've partnered with to help launch careers of aspiring small business owners.<br/> <span style="color:red">Read more > </span></p>
+
+		</div>
+
+		<div class="col-sm-4">
+		<img src="images/img2.png" class="img-responsive"/>
+		<h5 class="archerbold"><strong>Bringing more fresh produce to<br/> Alaskans' tables</strong></h5>
+		<p class="center5">We worked with the Alaska Pacific University to make sure that fresh and delicious vegetables are on the menu, thanks to the community-supported agriculture program.<br/><span style="color:red">Read more > </span></p>
+		</div>
+
+		<div class="col-sm-4">
+		<img src="images/img3.png" class="img-responsive"/>
+		<h5 class="archerbold"><strong>10 Veteran Warriors. 12,800 Vertical<br/> Feet. One Inspiring Journey.</strong></h5>
+		<p class="center5">See how we help veterans to transition from military to civillian life, with the Warriors to Summits expedition for wonded vets in Colorado and other efforts.<br/><span style="color:red">Read more > </span></p>
+		</div>
+		</div>
+
+		<img src="images/hline.png" class="img-responsive"/>
+		<br/><br/><br/>
+
+		<div class="row">
+		<div class="col-sm-9">
+		<img src="images/locationicon.png" class="img-responsive" style="float:left" id="locationicon"/>
+		<h3 class="locationicon">Discover organizations near you that are making<br/> a difference with Wells Fargo's support.</h3>
+		</div>
+		<div class="col-sm-3">
+		<img src="images/redbutton.png" class="img-responsive" style="float:left"/>
+		</div>
+      	</div>
+
+		<br/><br/><br/>
+
+		<div class="row">
+			<img src="images/greypiggie.png" class="img-responsive" id="greylock"/>
+			<h2 class="center1">Working together,<br/> we can reach your financial goals.</h2>
+			<br/>
+			<p class="center2">
+			From starting a business to saving for retirement, we're here to help support you<br/> while you're pursuing your financial goals.
+			</p>
+		</div>
+
+		<br/><br/><br/>
+
+		<div class="row">
+		<h3 class="center1">What vision of the future drives your financial goals?</h3>
+		<p class="center2">Choose an answer below</p>
+		</div>
+
+		<br/><br/>
+
+		<div class="row">
+		<div class="col-sm-3">
+		<img src="images/squareimg.png" class="img-responsive" style="float:left"/>
+		<p class="squareboxes"><br/><br/>Always knowing where my money is at and where it's going</p>
+		</div>
+		<div class="col-sm-3">
+		<img src="images/squareimg.png" class="img-responsive" style="float:left"/>
+		<p class="squareboxes"><br/><br/>Having the means to make my (or my kids) dream a reality</p>
+		</div>
+		<div class="col-sm-3">
+		<img src="images/squareimg.png" class="img-responsive" style="float:left"/>
+		<p class="squareboxes"><br/><br/>Knowing that my retirement account will outlast my retirement</p>
+		</div>
+		<div class="col-sm-3">
+		<img src="images/squareimg.png" class="img-responsive"style="float:left"/>
+		<p class="squareboxes"><br/><br/>A thriving business sparked from a lifelong passion</p>
+		</div>
+		</div>
+
+		<div class="row">
+		<img src="images/seeresults.png" class="img-responsive" id="seeresults"/>
+		</div>
+
+		<br/><br/><br/>
+
+	<div class="row-fluid-5">
+    <div class="span2">Setting financial goals</div>
+    <div class="span2">Credit management</div>
+    <div class="span2">Education Finances</div>
+    <div class="span2">Retirement</div>
+    <div class="span2">Small Business</div>
+	</div>
+
+	<br/><br/>
+
+	<div class="row">
+	<div class="col-sm-7">
+	<h3 class="fpriorities">Learn how to categorize your financial priorities.</h3>
+	<br/>
+	<img src="images/1.png" class="img-responsive"style="float:left"/>
+	<p>Identify your financial goals to help you determine where you want to go - and<br/> how you are going to get there.</p>
+	
+	<img src="images/2.png" class="img-responsive"style="float:left"/>
+	<p>Figure out how you're going to save by establishing your short-term, mid-term and<br/> long term goals.</p>
+	
+	<img src="images/3.png" class="img-responsive"style="float:left"/>
+	<p>Review on a regular basis - monthly for short-term objectives, and quarterly for<br/> long-term goals - to make sure you're on track.</p>
+	</div>
+	<div class="col-sm-5">
+	<img src="images/process.png" class="img-responsive"/>
+	</div>
+	</div>
+
+	<br/><br/><br/>
+
+	<div class="row">
+		<div class="col-sm-8">
+		<h3>Stories to Watch</h3>
+		<br/><br/>
+		 <div class="row">
+		 	<div class="col-sm-4">
+		 	<p>Financial education</p>
+		 	</div>
+
+		 	<div class="col-sm-4">
+		 	<p>Financial dreams worth chasing</p>
+		 	</div>
+
+		 	<div class="col-sm-4">
+		 	<p>Other videos</p>
+		 	</div>
+		 </div>
+		  <br/><br/>
+		 <img src="images/videoimg.png" class="img-responsive"/>
+		 <br/><br/>
+		 <img src="images/videohorizontal.png" class="img-responsive"/>
+		 <br/><br/>
+		 <h3>Simple tips to help get financially healthy</h3>
+		 <p>Learn about financial health with helpful money tips to manage<br/> your spending, saving, and borrowing needs.</p>
+		</div>
+
+		<div class="col-sm-4">
+		<h3>Stories to Follow</h3>
+		<img src="images/storiesimg.png" class="img-responsive"/>
+		<h4>Building confidence when 'it isn't easy to talk about money'</h4>
+		<p>In Oregon, a retired couple found the advice -- and technical expertise -- they needed to manage their spending after visiting the local Wells Fargo banking store. <span style="color:red">Read more > </span></p>
+		<br/>
+		<img src="images/storieshorizontal.png" class="img-responsive"/>
+		<br/><br/>
+
+		<div>
+		<p><strong>Why it's important to 'make savings a habit'</strong></p>
+		<p>For America Saves Week, Wells Fargo's John Papadopulos reviews eye-opening research on saving for retirement - and why you might want to consider adjustments</p>
+		</div>
+
+		<div>
+		<p><strong>House hunters find THE one - with a big assist</strong></p>
+		<p>A family in New Jersey found the home of their dreams with help from the Wells Fargo Home Lending team - and an online tool.<br/><span style="color:red">Read more > </span></p>
+		</div>
+
+		<div>
+		<p><strong>Smooth transition of retirement plan goes down easy</strong></p>
+		<p>International spirits company Brown-Forman needed a new 401(k) plan provider for its diverse employees, and Wells Fargo delivered.<br/><span style="color:red">Read more > </span></p>
+		</div>
+
+		<div>
+		<p><strong>From seed to sparkling success</strong></p>
+		<p>S. Martinelli & Company has made apple juice and sparkling cider since the 1860s -- and grown oer the past century with support from Wells Fargo.<br/><span style="color:red">Read more > </span></p>
+		</div>
+
+		</div>
+	</div>
+
+	<br/><br/><br/>
+
+	<div class="row">
+	<h3>Let's work together toward your financial dreams.</h3>
+	<p>Talk with a banker:1-800-869-3557</p>
+	</div>
+
+	<br/>
+
+	<div class="row">
+	<div class="col-sm-4">
+		<img src="images/zipcodeimg.png" class="img-responsive"/>
+	</div>
+
+	<div class="col-sm-4">
+	<img src="images/locationimg.png" class="img-responsive"/>
+	</div>
+
+	<div class="col-sm-4">
+	<img src="images/appointmentimg.png" class="img-responsive"/>
+	</div>
+	</div>
+
+	<br/><br/><br/>
+
+	<div class="row">
+	<img src="images/fbicon.png" class="img-responsive"style="float:left"/>
+	<img src="images/igicon.png" class="img-responsive"style="float:left"/>
+	<img src="images/yticon.png" class="img-responsive"style="float:left"/>
+	<img src="images/twicon.png" class="img-responsive"style="float:left"/>
+	</div>
+
+	<br/>
+
+	<div class="row">
+	<ul>
+		<li>About Wells Fargo</li>
+		<li>Careers</li>
+		<li>PRIVACY, Security & Legal</li>
+		<li>Report Email Fraud</li>
+		<li>Sitemap</li>
+		<li>Home</li>
+		<li>Diversity & Accessibility</li>
+		<li>Online Access Agreement</li>
+		<li>Blogs & Social Media</li>
+
+	</ul>
+	<br/>
+	<p>&copy; 1999-2015 Wells Fargo. All rights reserved. NMLSR ID 399801</p>
+	</div>
+
+
+
+    </div>
+    </div>
+
+    </body>
+    </html>
